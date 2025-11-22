@@ -1,0 +1,1093 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foodiez</title>
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- AOS animation -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark custom-navbar fixed-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold d-flex align-items-center" href="#">
+          <i class="fa-solid fa-utensils me-2 text-warning"></i>
+          Food<span>iez</span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto align-items-center">
+            <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About Us</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#gallery">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#service">Service</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero d-flex align-items-center text-center">
+      <div class="container">
+        <h1 class="fw-bold" data-aos="fade-up">Experience Authentic Flavor</h1>
+        <p class="lead" data-aos="fade-up">Fine Dining & Cozy Ambience .</p>
+        <a href="#menu" class="btn btn-view mt-3" data-aos="fade-right"
+          >View Menu</a
+        >
+        <a href="#book-table" class="btn btn-view mt-3" data-aos="fade-left"
+          >Book Now</a
+        >
+      </div>
+    </section>
+
+    <!-- About section -->
+    <section id="about" class="about-section py-5">
+      <div class="container text-center mb-5" data-aos="fade-down">
+        <h2 class="fw-bold" style="color: #8b0000">About Our Restaurant</h2>
+        <p class="text-muted">
+          Discover the passion, flavor, and warmth that make Foodiez a place to
+          remember.
+        </p>
+      </div>
+      <div class="container-fluid px-0">
+        <div class="row align-items-center g-0">
+          <div
+            class="col-lg-6 col-md-12 about-text p-5 text-light"
+            data-aos="fade-right"
+          >
+            <h3 class="fw-bold mb-3">Welcome to Foodiez</h3>
+            <p class="lead text-warning">
+              At Foodiez, we bring together traditional flavors and modern
+              presentation to create a dining experience full of joy, warmth,
+              and unforgettable taste.
+            </p>
+
+            <h4 class="mt-4 text-warning">Our Mission</h4>
+            <p>
+              To serve high-quality food with passion and care, ensuring that
+              every guest leaves with a smile and a satisfied heart.
+            </p>
+
+            <h4 class="mt-4 text-warning">Our Ambience</h4>
+            <p>
+              A cozy, stylish space where every detail is designed to make you
+              feel at home — whether you’re dining solo or celebrating with
+              friends.
+            </p>
+
+            <button class="btn btn-view fw-bold mt-3">Read More</button>
+          </div>
+          <div
+            class="col-lg-6 col-md-12 about-image"
+            style="
+              background: url('images/about1.avif') no-repeat center center;
+              background-size: cover;
+            "
+            data-aos="fade-left"
+          ></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu section -->
+    <section id="menu" class="menu py-5 fw-bold" style="color: #8b0000">
+      <div class="container">
+        <h2 class="text-center fw-bold mb-5" data-aos="fade-down">Our Menu</h2>
+        <!-- starters -->
+        <div class="row g-4" data-aos="zoom-in-up">
+          <div class="col-md-3 col-sm-6">
+            <div class="card text-center">
+              <img
+                src="images/garlicbread.jpg"
+                class="menu-img card-img-top"
+                alt="Garlic Bread"
+              />
+
+              <div class="card-body">
+                <h5 class="fw-bold">Garlic Bread</h5>
+                <p class="fw-bold">₹100</p>
+                <button class="btn btn-danger order-btn">Order Now</button>
+                <i class="fa-regular fa-heart like-icon"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="card text-center">
+              <img
+                src="images/bruschetta.jpg"
+                class="menu-img card-img-top"
+                alt="bruschetta"
+              />
+              <div class="card-body">
+                <h5 class="fw-bold">Bruschetta</h5>
+                <p class="fw-bold">₹120</p>
+                <button class="btn btn-danger order-btn">
+                  Order Now
+                  <i class="fa-regular fa-heart like-icon"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="card text-center">
+              <img
+                src="images/frenchfries.jpg"
+                class="menu-img card-img-top"
+                alt="french fries"
+              />
+              <div class="card-body">
+                <h5 class="fw-bold">French Fries</h5>
+                <p class="fw-bold">₹90</p>
+                <button class="btn btn-danger order-btn">
+                  Order Now
+                  <i class="fa-regular fa-heart like-icon"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="card text-center">
+              <img
+                src="images/vegspringroll.jpg"
+                class="menu-img card-img-top"
+                alt="veg spring roll"
+              />
+              <div class="card-body">
+                <h5 class="fw-bold">Veg Spring Roll</h5>
+                <p class="fw-bold">₹110</p>
+                <button class="btn btn-danger order-btn">
+                  Order Now
+                  <i class="fa-regular fa-heart like-icon"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- main course -->
+          <div class="col-md-3 col-sm-6">
+            <div class="card text-center">
+              <img
+                src="images/vegburger.jpg"
+                class="menu-img card-img-top"
+                alt="veg burger"
+              />
+              <div class="card-body">
+                <h5 class="fw-bold">Veg Burger</h5>
+                <p class="fw-bold">₹150</p>
+                <button class="btn btn-danger order-btn">
+                  Order Now
+                  <i class="fa-regular fa-heart like-icon"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="card text-center">
+              <img
+                src="images/grilledchikensandwich.jpg"
+                class="menu-img card-img-top"
+                alt="chiken sandwich"
+              />
+              <div class="card-body">
+                <h5 class="fw-bold">Chiken Sandwich</h5>
+                <p class="fw-bold">₹170</p>
+                <button class="btn btn-danger order-btn">
+                  Order Now
+                  <i class="fa-regular fa-heart like-icon"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="card text-center">
+              <img
+                src="images/redsaucepasta.jpg"
+                class="menu-img card-img-top"
+                alt="red sauce pasta"
+              />
+              <div class="card-body">
+                <h5 class="fw-bold">Red Sauce Pasta</h5>
+                <p class="fw-bold">₹160</p>
+                <button class="btn btn-danger order-btn">
+                  Order Now
+                  <i class="fa-regular fa-heart like-icon"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="card text-center">
+              <img
+                src="images/pizza.jpg"
+                class="menu-img card-img-top"
+                alt="pizza"
+              />
+              <div class="card-body">
+                <h5 class="fw-bold">Pizza</h5>
+                <p class="fw-bold">₹200</p>
+                <button class="btn btn-danger order-btn">
+                  Order Now
+                  <i class="fa-regular fa-heart like-icon"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- bread/rice -->
+          <div class="col-md-3 col-sm-6">
+            <div class="card text-center">
+              <img
+                src="images/roti.jpg"
+                class="menu-img card-img-top"
+                alt="roti"
+              />
+              <div class="card-body">
+                <h5 class="fw-bold">Roti</h5>
+                <p class="fw-bold">₹15</p>
+                <button class="btn btn-danger order-btn">
+                  Order Now
+                  <i class="fa-regular fa-heart like-icon"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="card text-center">
+              <img
+                src="images/nan.jpg"
+                class="menu-img card-img-top"
+                alt="naan"
+              />
+              <div class="card-body">
+                <h5 class="fw-bold">Naan</h5>
+                <p class="fw-bold">₹30</p>
+                <button class="btn btn-danger order-btn">
+                  Order Now
+                  <i class="fa-regular fa-heart like-icon"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="card text-center">
+              <img
+                src="images/rice.jpg"
+                class="menu-img card-img-top"
+                alt="rice"
+              />
+              <div class="card-body">
+                <h5 class="fw-bold">Rice</h5>
+                <p class="fw-bold">₹80</p>
+                <button class="btn btn-danger order-btn">
+                  Order Now
+                  <i class="fa-regular fa-heart like-icon"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="card text-center">
+              <img
+                src="images/friedrice.jpg"
+                class="menu-img card-img-top"
+                alt="fried rice"
+              />
+              <div class="card-body">
+                <h5 class="fw-bold">Fried Rice</h5>
+                <p class="fw-bold">₹140</p>
+                <button class="btn btn-danger order-btn">
+                  Order Now
+                  <i class="fa-regular fa-heart like-icon"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- curry -->
+          <div class="col-md-3 col-sm-6">
+            <div class="card text-center">
+              <img
+                src="images/dalmakhni.jpg"
+                class="menu-img card-img-top"
+                alt="dal makhni"
+              />
+              <div class="card-body">
+                <h5 class="fw-bold">Dal Makhni</h5>
+                <p class="fw-bold">₹120</p>
+                <button class="btn btn-danger order-btn">
+                  Order Now
+                  <i class="fa-regular fa-heart like-icon"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="card text-center">
+              <img
+                src="images/palakpanner.jpg"
+                class="menu-img card-img-top"
+                alt="palak panner"
+              />
+              <div class="card-body">
+                <h5 class="fw-bold">Palak Panner</h5>
+                <p class="fw-bold">₹140</p>
+                <button class="btn btn-danger order-btn">
+                  Order Now
+                  <i class="fa-regular fa-heart like-icon"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="card text-center">
+              <img
+                src="images/paneerbuttermasala.jpg"
+                class="menu-img card-img-top"
+                alt="paneer butter masala"
+              />
+              <div class="card-body">
+                <h5 class="fw-bold">Paneer Butter Masala</h5>
+                <p class="fw-bold">₹150</p>
+                <button class="btn btn-danger order-btn">
+                  Order Now
+                  <i class="fa-regular fa-heart like-icon"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="card text-center">
+              <img
+                src="images/butterchiken.jpg"
+                class="menu-img card-img-top"
+                alt="butter chiken"
+              />
+              <div class="card-body">
+                <h5 class="fw-bold">Butter Chicken</h5>
+                <p class="fw-bold">₹180</p>
+                <button class="btn btn-danger order-btn">
+                  Order Now
+                  <i class="fa-regular fa-heart like-icon"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Drinks -->
+          <div class="col-md-3 col-sm-6">
+            <div class="card text-center">
+              <img
+                src="images/cocacola.jpg"
+                class="menu-img card-img-top"
+                alt="cocacola"
+              />
+              <div class="card-body">
+                <h5 class="fw-bold">Coca-Cola</h5>
+                <p class="fw-bold">₹50</p>
+                <button class="btn btn-danger order-btn">
+                  Order Now
+                  <i class="fa-regular fa-heart like-icon"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="card text-center">
+              <img
+                src="images/icedtea.jpg"
+                class="menu-img card-img-top"
+                alt="Iced Tea"
+              />
+              <div class="card-body">
+                <h5 class="fw-bold">Iced Tea</h5>
+                <p class="fw-bold">₹80</p>
+                <button class="btn btn-danger order-btn">
+                  Order Now
+                  <i class="fa-regular fa-heart like-icon"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="card text-center">
+              <img
+                src="images/cofee.jpg"
+                class="menu-img card-img-top"
+                alt="cofee"
+              />
+              <div class="card-body">
+                <h5 class="fw-bold">Cofee</h5>
+                <p class="fw-bold">₹140</p>
+                <button class="btn btn-danger order-btn">
+                  Order Now
+                  <i class="fa-regular fa-heart like-icon"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="card text-center">
+              <img
+                src="images/oreoshake.jpg"
+                class="menu-img card-img-top"
+                alt="oreo shake"
+              />
+              <div class="card-body">
+                <h5 class="fw-bold">Oreo Shake</h5>
+                <p class="fw-bold">₹180</p>
+                <button class="btn btn-danger order-btn">
+                  Order Now
+                  <i class="fa-regular fa-heart like-icon"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Desert -->
+          <div class="col-md-3 col-sm-6">
+            <div class="card text-center">
+              <img
+                src="images/chocolatebrownie.jpg"
+                class="menu-img card-img-top"
+                alt="chocolate brownie"
+              />
+              <div class="card-body">
+                <h5 class="fw-bold">Chocolate Brownie</h5>
+                <p class="fw-bold">₹140</p>
+                <button class="btn btn-danger order-btn">
+                  Order Now
+                  <i class="fa-regular fa-heart like-icon"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="card text-center">
+              <img
+                src="images/cheesecake.jpg"
+                class="menu-img card-img-top"
+                alt="chees ecake"
+              />
+              <div class="card-body">
+                <h5 class="fw-bold">Cheese Cake</h5>
+                <p class="fw-bold">₹190</p>
+                <button class="btn btn-danger order-btn">
+                  Order Now
+                  <i class="fa-regular fa-heart like-icon"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="card text-center">
+              <img
+                src="images/fruitsalad.jpg"
+                class="menu-img card-img-top"
+                alt="fruit salad"
+              />
+              <div class="card-body">
+                <h5 class="fw-bold">Fruit Salad</h5>
+                <p class="fw-bold">₹160</p>
+                <button class="btn btn-danger order-btn">
+                  Order Now
+                  <i class="fa-regular fa-heart like-icon"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="card text-center">
+              <img
+                src="images/icecream.jpg"
+                class="menu-img card-img-top"
+                alt="icecream"
+              />
+              <div class="card-body">
+                <h5 class="fw-bold">Icecream</h5>
+                <p class="fw-bold">₹140</p>
+                <button class="btn btn-danger order-btn">
+                  Order Now
+                  <i class="fa-regular fa-heart like-icon"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Book a Table Section -->
+    <section id="book-table" class="py-5 fw-bold" style="color: #8b0000">
+      <div class="container">
+        <h2 class="text-center fw-bold mb-5" data-aos="fade-down">
+          Book a Table
+        </h2>
+        <form data-aos="fade-up">
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <label for="name">Name:</label>
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                placeholder="Enter Your Name"
+              />
+            </div>
+            <div class="col-md-6 mb-3">
+              <label for="Email">Email:</label>
+              <input
+                type="text"
+                class="form-control"
+                id="email"
+                placeholder="Enter Your Email"
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <label for="phone">Phone Number:</label>
+              <input
+                type="tel"
+                class="form-control"
+                id="phone"
+                placeholder="Enter Your phone number"
+              />
+            </div>
+            <div class="col-md-6 mb-3">
+              <label for="date">Date:</label>
+              <input type="date" class="form-control" id="date" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <label for="time">Time:</label>
+              <input type="time" class="form-control" id="time" />
+            </div>
+            <div class="col-md-6 mb-3">
+              <label for="guests">Number of Guests:</label>
+              <select class="form-control" id="guests">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+            </div>
+          </div>
+          <div class="text-center">
+            <button type="submit" class="btn btn-danger">Book Now</button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <!-- Gallery section -->
+    <section
+      id="gallery"
+      class="menu py-5 fw-bold"
+      style="color: #8b0000"
+      data-aos="fade-up"
+    >
+      <h2 class="text-center fw-bold mb-3" data-aos="fade-down">Our Gallery</h2>
+      <div
+        id="carouselExampleCaptions"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="3"
+            aria-label="Slide 4"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="4"
+            aria-label="Slide 5"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="5"
+            aria-label="Slide 6"
+          ></button>
+        </div>
+
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="images/interior.jpg"
+              class="d-block w-100"
+              alt="interior"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Restaurant Interiors</h5>
+              <p>Cozy and beautiful interior perfect for family gatherings.</p>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="images/staff.webp" class="d-block w-100" alt="staff" />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Dedicated Staff</h5>
+              <p>Friendly and professional staff ready to serve you.</p>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img
+              src="images/ingridients.avif"
+              class="d-block w-100"
+              alt="ingredients"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Fresh Ingredients</h5>
+              <p>We use only the freshest ingredients for all our dishes.</p>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="images/food.jpg" class="d-block w-100" alt="food" />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Delicious Dishes</h5>
+              <p>Delight your taste buds with our carefully prepared meals.</p>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="images/events.avif" class="d-block w-100" alt="events" />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Special Events</h5>
+              <p>Celebrate birthdays, anniversaries, and more with us!</p>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img
+              src="images/happy customer.webp"
+              class="d-block w-100"
+              alt="happy customer"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Happy Customers</h5>
+              <p>We value our customers and their smiles are our reward.</p>
+            </div>
+          </div>
+        </div>
+        <!--carousel-inner ends here -->
+
+        <!-- Controls -->
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section
+      id="service"
+      class="menu py-5 fw-bold"
+      style="color: #8b0000"
+      data-aos="flip-left"
+    >
+      <div class="container">
+        <h2 class="text-center fw-bold" data-aos="fade-down">Our Services</h2>
+        <p class="text-muted text-center mb-5">
+          Explore the range of services we provide to make your experience
+          memorable.
+        </p>
+      </div>
+      <div class="container">
+        <div class="row g-4">
+          <!-- Service Card 1 -->
+          <div class="col-md-4 col-sm-6">
+            <div class="service-card p-4 text-center shadow-sm rounded">
+              <i class="fa-solid fa-motorcycle fa-3x mb-3 text-danger"></i>
+              <h5 class="fw-bold">Home Delivery</h5>
+              <p>
+                Delicious food delivered to your doorstep with care and speed.
+              </p>
+            </div>
+          </div>
+
+          <!-- Service Card 2 -->
+          <div class="col-md-4 col-sm-6">
+            <div class="service-card p-4 text-center shadow-sm rounded">
+              <i class="fa-solid fa-calendar-check fa-3x mb-3 text-danger"></i>
+              <h5 class="fw-bold">Event Catering</h5>
+              <p>
+                Professional catering services for weddings, parties, and
+                events.
+              </p>
+            </div>
+          </div>
+
+          <!-- Service Card 3 -->
+          <div class="col-md-4 col-sm-6">
+            <div class="service-card p-4 text-center shadow-sm rounded">
+              <i class="fa-solid fa-phone-volume fa-3x mb-3 text-danger"></i>
+              <h5 class="fw-bold">Contact Support</h5>
+              <p>
+                Our friendly staff is always ready to assist your inquiries.
+              </p>
+            </div>
+          </div>
+
+          <!-- Service Card 4 -->
+          <div class="col-md-4 col-sm-6">
+            <div class="service-card p-4 text-center shadow-sm rounded">
+              <i class="fa-solid fa-utensils fa-3x mb-3 text-danger"></i>
+              <h5 class="fw-bold">Custom Menus</h5>
+              <p>Create your personalized menu for special occasions.</p>
+            </div>
+          </div>
+
+          <!-- Service Card 5 -->
+          <div class="col-md-4 col-sm-6">
+            <div class="service-card p-4 text-center shadow-sm rounded">
+              <i class="fa-solid fa-wine-glass fa-3x mb-3 text-danger"></i>
+              <h5 class="fw-bold">Beverage Pairing</h5>
+              <p>Expertly paired drinks to complement your meals perfectly.</p>
+            </div>
+          </div>
+
+          <!-- Service Card 6 -->
+          <div class="col-md-4 col-sm-6">
+            <div class="service-card p-4 text-center shadow-sm rounded">
+              <i class="fa-solid fa-gift fa-3x mb-3 text-danger"></i>
+              <h5 class="fw-bold">Gift Packages</h5>
+              <p>Special gift packages for holidays, birthdays,</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Testimonial Section -->
+    <section id="testimonial" class="py-5 bg-light" data-aos="flip-down">
+      <div class="container">
+        <h2
+          class="text-center fw-bold mb-5"
+          style="color: #8b0000"
+          data-aos="fade-down"
+        >
+          What Our Customers Say
+        </h2>
+
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-6">
+            <div class="card testimonial-card p-3 text-center">
+              <img
+                src="images/customer1.avif"
+                alt="Customer 1"
+                class="customer-img mb-3"
+              />
+              <h5 class="fw-bold">Anjali Verma</h5>
+              <p class="text-muted">
+                "Delicious food and amazing ambiance! Highly recommended for
+                family dinners."
+              </p>
+              <div class="stars text-warning">
+                &#9733; &#9733; &#9733; &#9733; &#9734;
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="card testimonial-card p-3 text-center">
+              <img
+                src="images/customer2.avif"
+                alt="Customer 2"
+                class="customer-img mb-3"
+              />
+              <h5 class="fw-bold">Rohit Sharma</h5>
+              <p class="text-muted">
+                "Loved the desserts, especially the brownie! Cozy place and
+                friendly staff."
+              </p>
+              <div class="stars text-warning">
+                &#9733; &#9733; &#9733; &#9733; &#9733;
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="card testimonial-card p-3 text-center">
+              <img
+                src="images/customer3.avif"
+                alt="Customer 3"
+                class="customer-img mb-3"
+              />
+              <h5 class="fw-bold">Neha Sharma</h5>
+              <p class="text-muted">
+                "Great service and tasty food! Loved the pasta and pizza."
+              </p>
+              <div class="stars text-warning">
+                &#9733; &#9733; &#9733; &#9733; &#9734;
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="card testimonial-card p-3 text-center">
+              <img
+                src="images/customer4.avif"
+                alt="Customer 4"
+                class="customer-img mb-3"
+              />
+              <h5 class="fw-bold">Suresh Patil</h5>
+              <p class="text-muted">
+                "Authentic flavors, fresh ingredients, and amazing ambiance!"
+              </p>
+              <div class="stars text-warning">
+                &#9733; &#9733; &#9733; &#9733; &#9733;
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="card testimonial-card p-3 text-center">
+              <img
+                src="images/customer5.avif"
+                alt="Customer 5"
+                class="customer-img mb-3"
+              />
+              <h5 class="fw-bold">Amit Joshi</h5>
+              <p class="text-muted">
+                "Cozy place and excellent food quality. Perfect for family
+                outings."
+              </p>
+              <div class="stars text-warning">
+                &#9733; &#9733; &#9733; &#9733; &#9734;
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="card testimonial-card p-3 text-center">
+              <img
+                src="images/customer6.avif"
+                alt="Customer 6"
+                class="customer-img mb-3"
+              />
+              <h5 class="fw-bold">Neha Gupta</h5>
+              <p class="text-muted">
+                "The ambiance is amazing and the food is delicious. Highly
+                recommended!"
+              </p>
+              <div class="stars text-warning">
+                &#9733; &#9733; &#9733; &#9733; &#9733;
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact" class="py-5 bg-light" data-aos="fade-up">
+      <div class="container">
+        <h2
+          class="text-center fw-bold mb-5"
+          style="color: #8b0000"
+          data-aos="fade-down"
+        >
+          Contact Us
+        </h2>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <form class="contact-form p-4 rounded shadow-sm bg-white">
+              <div class="mb-3">
+                <label for="name" class="form-label fw-bold">Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  placeholder="Your Name"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label fw-bold">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="Your Email"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="subject" class="form-label fw-bold">Subject</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="subject"
+                  placeholder="Subject"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label fw-bold">Message</label>
+                <textarea
+                  class="form-control"
+                  id="message"
+                  rows="5"
+                  placeholder="Write your message..."
+                ></textarea>
+              </div>
+              <div class="text-center">
+                <button type="submit" class="btn btn-danger px-5">
+                  Send Message
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-light pt-5 pb-3" id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 mb-4">
+            <h3 class="fw-bold">Food<span>iez</span></h3>
+            <p class="fw-bold">
+              Discover the passion, flavor, and warmth that make Foodiez a place
+              to remember.
+            </p>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <h5 class="fw-bold mb-3 text-warning">Quick Links</h5>
+            <ul class="list-unstyled fw-bold">
+              <li>
+                <a href="#about" class="text-light text-decoration-none"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a href="#menu" class="text-light text-decoration-none">Menu</a>
+              </li>
+              <li>
+                <a href="#services" class="text-light text-decoration-none"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a href="#contact" class="text-light text-decoration-none"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-4 col-md-12 mb-4">
+            <h5 class="fw-bold mb-3 text-warning fw-bold">Contact</h5>
+            <p>
+              <i class="fa-solid fa-location-dot me-2 fw-bold"></i
+              >Foodiez,Bhubaneswar
+            </p>
+            <p><i class="fa-solid fa-phone me-2 fw-bold"></i>+91 98765 43210</p>
+            <p><i class="fa-solid fa-envelope me-2"></i>@foodiez03gmail.com</p>
+            <div class="mt-3">
+              <a href="#" class="text-light fs-4 me-3"
+                ><i class="fab fa-facebook-f fw-bold"></i
+              ></a>
+              <a href="#" class="text-light fs-4 me-3"
+                ><i class="fab fa-instagram fw-bold"></i
+              ></a>
+              <a href="#" class="text-light fs-4 me-3"
+                ><i class="fab fa-twitter fw-bold"></i
+              ></a>
+              <a href="#" class="text-light fs-4 me-3"
+                ><i class="fab fa-youtube fw-bold"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <hr class="border-light" />
+
+        <div class="text-center">
+          <p class="mb-0">
+            &copy; 2025 Foodiez. Designed by
+            <span class="fw-bold">Himadri Tanaya Biswal</span>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+  </body>
+</html>

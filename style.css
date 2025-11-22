@@ -1,0 +1,433 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #fffaf0;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+/* Navbar */
+.custom-navbar {
+  background-color: #8b0000;
+  padding: 10px 0;
+  transition: all 0.4s ease;
+}
+.navbar-brand {
+  letter-spacing: 2;
+  font-weight: 900;
+  font-size: 1.5rem;
+  font-style: italic;
+}
+
+.navbar-brand span {
+  color: #ffcc00;
+}
+.navbar-brand:hover {
+  color: #ffcc00;
+  transition: all 0.8s ease-in-out;
+}
+.nav-link {
+  color: #fff !important;
+  font-weight: 700;
+  margin-left: 20px;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #ffcc00 !important;
+}
+
+/* Hero Section */
+.hero {
+  background: url("images/herobg.jpg") no-repeat center center/cover;
+  height: 100vh;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.55);
+}
+
+.hero .container {
+  position: relative;
+  z-index: 1;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  color: #ffdf91;
+}
+
+.btn-view {
+  background-color: #ffcc00;
+  color: #8b0000;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 35px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-view:hover {
+  background-color: #8b0000;
+  color: #fff;
+}
+/* About Section Styling */
+.about-section {
+  background-color: #f9f9f9;
+  padding: 80px 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.about-section .row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  gap: 30px;
+}
+
+/* Left Text */
+.about-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 60px 40px;
+  background-color: #8b0000;
+  color: #fff;
+  border-radius: 20px 0 0 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.about-text h3,
+.about-text h4 {
+  color: #ffb400;
+}
+.about-text p {
+  color: #f0e68c;
+  line-height: 1.7;
+}
+
+/* Right Image */
+.about-image {
+  flex: 1;
+  min-height: 650px;
+  border-radius: 0 20px 20px 0;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Menu section styling */
+#menu {
+  background-color: #fff;
+  padding: 80px 0;
+}
+
+#menu h2 {
+  color: #8b0000;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+
+.menu .card {
+  background-color: #fff7e6;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  position: relative;
+  transition: 0.3s ease;
+}
+
+.menu .card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.menu-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.like-icon {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: #8b0000;
+  font-size: 1.4rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.like-icon:hover {
+  color: #ff3333;
+}
+
+.menu .card-body h5 {
+  color: #8b0000;
+  font-weight: 700;
+}
+
+.menu .card-body p {
+  color: #5a3e36;
+  margin-bottom: 10px;
+}
+
+.order-btn {
+  background-color: #8b0000;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 18px;
+  transition: background-color 0.3s ease;
+}
+
+.order-btn:hover {
+  background-color: #a52a2a;
+}
+
+/* Gallery styling Section */
+#gallery {
+  padding: 80px 0;
+  text-align: center;
+}
+
+#gallery .carousel {
+  max-width: 85%;
+  margin: auto;
+  overflow: hidden;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.2);
+}
+
+#gallery .carousel-item img {
+  width: 100%;
+  height: 320px;
+  border-radius: 15px 70px;
+  object-fit: cover;
+}
+
+#gallery .carousel-caption {
+  background: rgba(0, 0, 0, 0.55);
+  padding: 20px;
+  bottom: 30px;
+  border-radius: 10px;
+}
+
+#gallery .carousel-caption h5 {
+  color: #fff;
+  font-weight: 600;
+}
+
+#gallery .carousel-caption p {
+  color: #f7e3c5;
+  font-size: 1rem;
+}
+
+#gallery .carousel-control-prev-icon,
+#gallery .carousel-control-next-icon {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background-size: 60%;
+  transition: all 0.3s ease;
+}
+
+#gallery .carousel-control-prev-icon:hover,
+#gallery .carousel-control-next-icon:hover {
+  background-color: #8b0000;
+}
+
+#gallery .carousel-indicators [data-bs-target] {
+  background-color: #8b0000;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  opacity: 0.8;
+  transition: all 0.3s ease;
+}
+
+#gallery .carousel-indicators .active {
+  background-color: #ff6600;
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+/* Book a Table Section */
+#book-table {
+  background-color: #fffaf0;
+  padding: 80px 0;
+}
+
+#book-table label {
+  font-weight: 500;
+  color: #8b0000;
+}
+
+#book-table input,
+#book-table select {
+  border: 2px solid #8b0000;
+  border-radius: 8px;
+  padding: 10px;
+  transition: all 0.3s ease;
+}
+
+#book-table input:focus,
+#book-table select:focus {
+  border-color: #ff6600;
+  box-shadow: 0 0 5px rgba(255, 102, 0, 0.4);
+}
+
+#book-table .btn-danger {
+  background-color: #8b0000;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+#book-table .btn-danger:hover {
+  background-color: #ff6600;
+}
+
+/* Services Section styling */
+.services-section {
+  background: linear-gradient(135deg, #fff0e6, #ffe6cc);
+  padding: 80px 0;
+}
+
+.services-section h2 {
+  font-size: 2.8rem;
+  margin-bottom: 15px;
+}
+
+.services-section p {
+  font-size: 1.1rem;
+  color: #555;
+  max-width: 600px;
+  margin: 0 auto 50px auto;
+}
+
+.service-card {
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 30px 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card i {
+  color: #8b0000;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.service-card p {
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  opacity: 0.7;
+}
+
+.service-card:hover i {
+  transform: scale(1.2);
+  color: #ff4500;
+}
+.testimonial-card {
+  background-color: #fff;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.customer-img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #8b0000;
+}
+
+.stars {
+  font-size: 1rem;
+  margin-top: 5px;
+}
+
+/* Contactus styling */
+.contact-form {
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.contact-form:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.contact-form .form-control {
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.contact-form button {
+  background-color: #ffcc00;
+  color: #8b0000;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 35px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #8b0000;
+  color: #fff;
+}
+
+/* footer  */
+#footer {
+  background-color: #8b0000;
+}
+#footer h3 {
+  letter-spacing: 2;
+  font-weight: 900;
+  font-size: 1.5rem;
+  font-style: italic;
+}
+#footer h3 span {
+  color: #ffb400;
+}
+#footer i:hover {
+  color: yellow;
+  transform: translateY(-3px);
+}
